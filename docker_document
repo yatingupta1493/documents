@@ -1,0 +1,29 @@
+dozens of docker flavours available
+basically we use CE(Community Edition) and EE(enterprise edition)[paid]
+docker toolbox for windows,mac(don't use brew)
+3 installs - direct, cloud, mac/win
+docker for aws/azure/google
+2 releases - edge and stable
+edge - released every month, support most new features that may remain only for month
+stable - released quaterly, by default it is downloaded
+support pro and enterprise edition of windows only
+windows 10 only support docker
+old version windows or windows 10 home donot support docker. window 10 pro/ent or windows server 2016 only support it
+window 10 home or old version windows should use Docker Toolbox
+donot use built-in packages linux as they are old
+docker install: curl -sSL https://get.docker.com/ | sh (provide edge release)
+two container on windows - linux and windows(concept formulazed by microsoft in late 2016)
+MS Hyper-V create virtual machine on x86-64 windows machine. First released alongside windows server 2008.
+store.docker.com has info for each distribution as linux, windows or whatever
+RHEL offcially only support docker EE but no such restriction for centos
+must check if docker support that distribution like Amazon Linux is not supported
+don't use preinstalled setups
+
+// Installing docker
+
+- script, docker store, docker-machine
+curl -sSL https://get.docker.com/ | sh
+usermod -aG docker yatin
+docker version
+// docker allow to add user to group docker and run all docker commands by that user instead of root
+// however some distros like fedora, RHEL, centos may not allow it.
